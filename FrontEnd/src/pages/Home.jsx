@@ -15,7 +15,7 @@ const Home = () => {
             to="/login"
             className="btn btn-primary btn-sm rounded-pill shadow"
           >
-            Login
+             Login
           </Link>
           <Link
             to="/register"
