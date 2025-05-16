@@ -7,11 +7,9 @@ const MONGO_URI =
 const connectDB = async () => {
   try {
     // Connect to MongoDB
-    await mongoose.connect(MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("MongoDB Connected Successfully");
+    await mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB connected'))
+  .catch((err) => console.error('Connection error:', err));
     // Create the empty User collection
     await User.createCollection();
     console.log("User collection created successfully");
