@@ -23,7 +23,4 @@ connectDB();
 
 module.exports = connectDB;
 
-// pandeynityanand4840;
-//8oqp96TPu15y1zjI
 
-// APP PSWRD = eqbl hjvb rmhk bhre
